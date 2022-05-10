@@ -1,0 +1,495 @@
+@charset "UTF-8";
+/* Add your custom CSS declarations below  */
+
+
+body{
+    font-family: franklin gothic book, serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#03060A;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: adonis-web, serif;
+    font-weight: 500;
+    font-style: normal;   
+}
+
+.nav {
+    padding:10px;
+    font-size:14px;
+    font-family: adonis-web, serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+.head {
+    color: #9A2925;
+}
+
+a {
+    color: #03060A;
+    text-decoration: none;
+}
+
+.dropdown-item:focus {
+    color: #eee;
+    background-color: #9A2925;
+    border-color: #9A2925;
+}
+
+.dropdown-item {
+    color: #eee;
+    background-color: #03060A;
+    border-color: #03060A;
+}
+
+.dropdown-item:hover {
+    color: #03060A;
+    background-color: #F0EED3;
+}
+
+a:hover {
+    color: #88a4a7;
+}
+
+.dropdown-item {
+    width: 100%;
+    font-size: 14px;
+    clear: both;
+    font-weight: 400;
+    color: #03060A;
+    text-align: inherit;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/* HAMBURGER MENU STYLES */
+#menu__toggle {
+display:none;
+}
+
+#menu__toggle:checked + .menu__btn > span {
+transform: rotate(45deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::before {
+top: 0;
+transform: rotate(0deg);
+}
+
+#menu__toggle:checked + .menu__btn > span::after {
+top: 0;
+transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+right: 0 !important;
+}
+
+.menu__btn {
+position: fixed;
+top: 26px;
+right: 26px;
+width: 2px;
+height: 26px;
+cursor: pointer;
+z-index: 1;
+transition: all .5s ease-in-out;
+}
+
+.menu__btn > span, .menu__btn > span::before, .menu__btn > span::after {
+display: block;
+position: absolute;
+width: 100%;
+height: 2px;
+background-color: #03060A;;
+transition-duration: .25s;
+}
+
+.menu__btn > span::before {
+content: '';
+position:absolute;
+transition: all .5s ease-in-out;   
+top: -8px;
+}
+
+.menu__btn > span::after {
+content: '';
+position:absolute;
+transition: all .5s ease-in-out;   
+top: 8px;
+}
+
+.menu__box {
+display: block;
+position: fixed;
+top: 55px;
+right: -100%;
+height: auto;
+padding:15px;
+z-index: 1;
+background-color: rgba(238, 238, 238, 1.0);
+box-shadow: -2px 2px 9px rgba(0, 0, 0, .3);
+}
+
+.menu__item {
+display: block;
+position:absolute;
+padding: 9px 44px 9px 0;
+}
+
+.menu__item:hover {
+background-color: rgba(154, 41, 37, 0.3);
+}
+
+/* HAMBURGER GOES AWAY AT 900PX */
+@media only screen and (min-width:900px) {
+.header-left {
+grid-column:1/13;
+}
+.header-right {
+grid-column:1/13;
+}
+.hide {
+display:none;
+}
+.menu__toggle {
+display:inline;
+}
+.menu__btn {
+display:none;
+}
+.menu__box {
+display:flex;
+flex-direction:row;
+justify-content:space-around;
+position: initial;
+padding:10px;
+background-color: #fff;
+box-shadow: none;
+}
+.menu__item {
+color:white;
+display: block;
+padding: 0 0;
+color: #03060A;
+text-decoration: none;
+}
+}
+
+
+.head{
+    font-family: adonis-web, serif;
+    font-weight: 500;
+    font-style: normal; 
+}
+
+.name{
+    padding: 15px;
+}
+
+.rounded {
+    border-radius: 0.25rem!important;
+}
+
+.travel {
+    padding: 0px;
+    border: 2px solid #03060A;
+}
+
+.content_img{
+    padding-top: 15px;
+}
+
+.hvrbox,
+.hvrbox * {
+	box-sizing: border-box;
+}
+.hvrbox {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+    padding:10px;
+}
+
+.hvrbox-text {
+    font-family: adonis-web, serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.hvrbox img {
+	max-width: 100%;
+}
+.hvrbox .hvrbox-layer_bottom {
+	display: block;
+}
+.hvrbox .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+    background: rgba(238, 238, 238, 0.9); 
+    color: #03060A;
+	padding: 10px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+	opacity: 1;
+}
+.hvrbox .hvrbox-text {
+	text-align: center!important;
+	font-size: 16px !important;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+    max-width: 100%;
+}
+.hvrbox .hvrbox-text_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgb(238, 238, 238); /* for old browsers */
+	border-top: 1px solid rgba(238, 238, 238, 0.9)
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+.hvrbox.active .hvrbox-text_mobile {
+	display: block;
+}
+.hvrbox,
+.hvrbox * {
+	box-sizing: border-box;
+    padding:0px;
+}
+.hvrbox {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	max-width: 100%;
+	height: auto;
+}
+.hvrbox img {
+	max-width: 100%;
+}
+.hvrbox .hvrbox-layer_bottom {
+	display: block;
+}
+.hvrbox .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(238, 238, 238, 0.9);
+    color: #03060A;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+	opacity: 1;
+}
+.hvrbox .hvrbox-text {
+	text-align: center!important;
+	font-size: 17px !important;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.hvrbox .hvrbox-text_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgb(238, 238, 238); /* for old browsers */
+	border-top: 1px solid rgba(238, 238, 238, 0.9);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+.hvrbox.active .hvrbox-text_mobile {
+	display: block;
+}
+
+.quote{
+    padding-top:30px;
+    padding-bottom:30px;
+    text-align: center;
+}
+
+.place {
+  padding-top:15px; 
+  font-family: adonis-web, serif;
+  font-weight: 500;
+  font-style: italic;    
+    
+}
+
+.maine {
+    padding-bottom:30px;
+}
+
+.headshots {
+    padding-top:0px;
+    padding-bottom:30px;
+}
+.photo{
+    padding-top:20px;
+    padding-left:20px;
+    padding-right:20px;  
+    padding-bottom:5px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;   
+  background: rgba(240,238, 211, 1.0);    
+  color: #03060A;
+  text-align: center;
+  font-family: adonis-web, serif;
+  font-weight: 400;
+  font-style: normal;     
+}
+
+.bio {
+    text-align:left;
+    font-size:16px;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.about {
+    padding:20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.branding {
+    text-align: center;
+    padding-top:0px;
+    padding-bottom:0px;
+    padding-left:40px;
+    padding-right:40px;
+}
+
+.album {
+    text-align: center;
+}
+
+.embed {
+    text-align: center;
+    padding-top:60px;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  outline-color: #9a2925;   
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #eee;
+  padding: 20px;
+}
+
+btn-primary:focus {
+    color: #fff;
+    background-color: #03060A;
+    border-color: #03060A;
+    box-shadow: none;
+    border:none;
+    font-family: adonis-web;
+}
+
+.btn-primary {
+   color: #fff;
+    background-color: #03060A;
+    border-color: #03060A;
+    font-family: adonis-web, serif;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #03060A;
+    border-color: #03060A;
+    font-family: adonis-web;
+}
+
+.btn-secondary:focus {
+    color: #fff;
+    background-color: #03060A;
+    border-color: #03060A;
+    font-family: adonis-web;
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #03060A;
+    border-color: #03060A;
+    font-family: adonis-web;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #88a4a7;
+    border-color:  #88a4a7;
+    font-family: adonis-web;
+}
+
+.btn-primary:focus-visible {
+     border-color:#88a4a7;
+     font-family: adonis-web;
+}
+
+.btn-check:focus+.btn-primary, .btn-primary:focus {
+    color:  #fff;
+    background-color: #88a4a7;
+    border-color: #88a4a7;
+    font-family: adonis-web;
+}
+
+.btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle {
+    color:  #fff;
+    background-color: #88a4a7;
+    border-color: #88a4a7;
+    font-family: adonis-web;
+}
+
+
