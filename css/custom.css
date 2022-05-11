@@ -181,7 +181,7 @@ padding: 9px 44px 9px 0;
 }
 
 .menu__item:hover {
-background-color: rgba(154, 41, 37, 0.3);
+background-color: rgba(240, 238, 211, 0.3);
 }
 
 /* HAMBURGER GOES AWAY AT 900PX */
@@ -402,7 +402,7 @@ text-decoration: none;
     padding-top:20px;
     padding-left:20px;
     padding-right:20px;  
-    padding-bottom:5px;
+    padding-bottom:10px;
 }
 
 .footer {
@@ -435,7 +435,7 @@ h1 {
 
 .branding {
     text-align: center;
-    padding-top:0px;
+    padding-top:12px;
     padding-bottom:0px;
     padding-left:40px;
     padding-right:40px;
