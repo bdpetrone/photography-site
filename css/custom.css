@@ -22,6 +22,10 @@ h1, h2, h3, h4, h5 {
     font-style: normal; 
 }
 
+.nav-item .nav-link:focus {
+  outline: none;
+}
+
 .head {
     color: #9A2925;
 }
