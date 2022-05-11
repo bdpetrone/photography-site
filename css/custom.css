@@ -305,7 +305,7 @@ text-decoration: none;
 .hvrbox .hvrbox-text_mobile {
 	font-size: 15px;
 	border-top: 1px solid rgb(238, 238, 238); /* for old browsers */
-	border-top: 1px solid rgba(238, 238, 238, 0.9)
+	border-top: 1px solid rgba(238, 238, 238, 0.9);
 	margin-top: 5px;
 	padding-top: 2px;
 	display: none;
