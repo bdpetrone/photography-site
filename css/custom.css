@@ -27,6 +27,48 @@ h1, h2, h3, h4, h5 {
     color: #9A2925;
 }
 
+.carousel {
+    padding-bottom:20px;
+}
+
+#back2Top {
+width:30px; /* width of button */
+height:30px; /* height of button */
+line-height:20px;
+overflow:hidden;
+z-index:999;
+display:none; /* initially not displayed */
+cursor:pointer;
+transform:rotate(270deg); /* turns right arrow 270 degrees */
+position:fixed; /* fixed at bottom corner */
+bottom:40px; /* distance from bottom */
+right:30px; /* distance from right */
+padding:4px 4px 13px 4px; /* padding around arrow */
+border:0.5px solid  #03060A;
+border-radius:2.5px;
+background:rgba(240, 238, 211, 0.7); /* blue background with transparency */
+color:#eee; /* color of arrow */
+text-align:center;
+font-size:20px; /* size of the arrow */
+text-decoration:none;
+}
+#back2Top:link {
+background:rgba(240, 238, 211, 0.9);
+color:#fff;
+}
+#back2Top:visited {
+background:rgba(240, 238, 211, 0.9);
+color:#fff;
+}
+#back2Top:hover {
+background:rgba(240, 238, 211, 0.9);
+color:#eee;
+}
+#back2Top:active {
+background:rgba(240, 238, 211, 0.9);
+color:#eee;
+}
+
 a {
     color: #03060A;
     text-decoration: none;

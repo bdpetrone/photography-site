@@ -14,6 +14,8 @@
 		<link href="css/custom.css" rel="stylesheet" type="text/css" media="screen">
         
         <link rel="stylesheet" href="https://use.typekit.net/crr7flo.css">
+        
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
 	</head>
 
@@ -82,28 +84,28 @@
 
                 <div class="row gallery">
                     <div class="col-md-3">
-                        <img loading="lazy" class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4571.jpg" alt="portrait photography">
-                        <img loading="lazy" class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4604.jpg" alt="portrait photography">
-                        <img loading="lazy" class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4619.jpg" alt="portrait photography">
-                        <img loading="lazy" class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4644.jpg" alt="portrait photography"> 
+                        <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4571.jpg" alt="portrait photography">
+                        <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4604.jpg" alt="portrait photography">
+                        <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4619.jpg" alt="portrait photography">
+                        <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4644.jpg" alt="portrait photography"> 
                     </div>
                     <div class="col-md-3">
-                        <img loading="lazy" class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4532.jpg" alt="portrait photography">
-                        <img loading="lazy" class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4586.jpg" alt="portrait photography">
-                        <img loading="lazy" class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4607.jpg" alt="portrait photography">
-                        <img loading="lazy" class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4620.jpg" alt="portrait photography">
+                        <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4532.jpg" alt="portrait photography">
+                        <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4586.jpg" alt="portrait photography">
+                        <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4607.jpg" alt="portrait photography">
+                        <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4620.jpg" alt="portrait photography">
                     </div>
                     <div class="col-md-3">
-                        <img loading="lazy" class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4507.jpg" alt="portrait photography">
-                        <img loading="lazy" class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4587.jpg" alt="portrait photography">
-                        <img loading="lazy" class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4614.jpg" alt="portrait photography">
-                        <img loading="lazy" class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4625-2.jpg" alt="portrait photography">
+                        <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4507.jpg" alt="portrait photography">
+                        <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4587.jpg" alt="portrait photography">
+                        <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4614.jpg" alt="portrait photography">
+                        <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4625-2.jpg" alt="portrait photography">
                     </div>
                     <div class="col-md-3">
-                        <img loading="lazy" class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4524.jpg" alt="portrait photography">
-                        <img loading="lazy" class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4589.jpg" alt="portrait photography">
-                        <img loading="lazy" class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4618.jpg" alt="portrait photography">
-                        <img loading="lazy" class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4636.jpg" alt="portrait photography">
+                        <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4524.jpg" alt="portrait photography">
+                        <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4589.jpg" alt="portrait photography">
+                        <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4618.jpg" alt="portrait photography">
+                        <img class="img-fluid w-100 shadow-1-strong rounded mb-4" src="portraits/IMG_4636.jpg" alt="portrait photography">
                     </div>
                 </div>
                 <!-- end of div gallery -->
@@ -117,7 +119,28 @@
 
         </div> <!-- end of div container -->
 
+        <div><a id="back2Top" title="Back to top" href="#">&#10148;</a></div>
 
+        <script>
+        /* Scroll to top when arrow up clicked BEGIN */
+        $(window).scroll(function() {
+        var height = $(window).scrollTop();
+        if (height > 100) {
+        $('#back2Top').fadeIn();
+        } else {
+        $('#back2Top').fadeOut();
+        }
+        });
+        $(document).ready(function() {
+        $("#back2Top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "fast");
+        return false;
+        });
+
+        });
+        /* Scroll to top when arrow up clicked END */
+        </script>
 		
 	</body>
 </html>
