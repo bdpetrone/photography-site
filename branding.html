@@ -143,9 +143,8 @@
             
         </div> <!-- end of div image container -->
 
-        <div><a id="back2Top" title="Back to top" href="#">&#10148;</a></div>
-
-        <script>
+    <div><a id="back2Top" title="Back to top" href="#">&#10148;</a></div>
+    <script>
         /* Scroll to top when arrow up clicked BEGIN */
         $(window).scroll(function() {
         var height = $(window).scrollTop();
@@ -164,9 +163,9 @@
 
         });
         /* Scroll to top when arrow up clicked END */
-        </script>
-        
-
+        window.addEventListener("hashchange", () => {
+        document.getElementById("menu__toggle").checked = false; });
+    </script>
 		
 	</body>
 </html>
