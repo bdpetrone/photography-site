@@ -1,10 +1,9 @@
 @charset "UTF-8";
 /* Add your custom CSS declarations below  */
 
-
 body{
-    font-family: franklin gothic book, serif;
-    font-weight: 400;
+    font-family: 'franklin gothic book', sans-serif;
+    font-weight: 500;
     font-style: normal;
     color:#03060A;
 }
