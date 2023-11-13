@@ -49,26 +49,26 @@ right:30px; /* distance from right */
 padding:4px 4px 13px 4px; /* padding around arrow */
 border:0.5px solid  #03060A;
 border-radius:2.5px;
-background:rgba(240, 238, 211, 0.7); /* blue background with transparency */
+background:#03060A; /* blue background with transparency */
 color:#eee; /* color of arrow */
 text-align:center;
 font-size:20px; /* size of the arrow */
 text-decoration:none;
 }
 #back2Top:link {
-background:rgba(240, 238, 211, 0.9);
+background:#03060A;
 color:#fff;
 }
 #back2Top:visited {
-background:rgba(240, 238, 211, 0.9);
+background:#03060A;
 color:#fff;
 }
 #back2Top:hover {
-background:rgba(240, 238, 211, 0.9);
+background:#03060A;
 color:#eee;
 }
 #back2Top:active {
-background:rgba(240, 238, 211, 0.9);
+background:#03060A;
 color:#eee;
 }
 
@@ -90,12 +90,12 @@ a {
 }
 
 .dropdown-item:hover {
-    color: #03060A;
-    background-color: #F0EED3;
+    color: #fff;
+    background-color: #03060A;
 }
 
 a:hover {
-    color: #88a4a7;
+    color: #9A2925;
 }
 
 .dropdown-item {
@@ -414,12 +414,14 @@ text-decoration: none;
   left: 0;
   bottom: 0;
   width: 100%;   
-  background: rgba(240,238, 211, 1.0);    
-  color: #03060A;
+  background: #03060A;    
+  color: #fff;
   text-align: center;
-  font-family: adonis-web, serif;
-  font-weight: 400;
-  font-style: normal;     
+  
+  
+  font-family: 'franklin gothic book', sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .bio {
@@ -541,4 +543,6 @@ btn-primary:focus {
     padding-top: 15px;
 }
 
-
+.place{
+    padding-top:50px;
+}
