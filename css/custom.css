@@ -223,6 +223,13 @@ text-decoration: none;
 }
 }
 
+@media (max-width: 768px){
+    .menu__box{
+        width:40%;
+    }
+
+}
+
 
 .head{
     font-family: adonis-web, serif;
