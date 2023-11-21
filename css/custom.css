@@ -1,25 +1,63 @@
 @charset "UTF-8";
 /* Add your custom CSS declarations below  */
 
-body{
-    font-family: 'franklin gothic book', sans-serif;
-    font-weight: 500;
-    font-style: normal;
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Heebo', sans-serif;
+    font-weight:300;
     color:#03060A;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: adonis-web, serif;
-    font-weight: 500;
-    font-style: normal;   
+h1 {
+    font-family: "mr-eaves-xl-modern-narrow", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-transform:uppercase;
+}
+h2 {
+    text-align:center;
+    font-family: "mr-eaves-xl-modern-narrow", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-transform:uppercase;
+}
+
+h3 {
+    grid-column:1/2;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    font-family: "mr-eaves-xl-modern-narrow", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-transform:uppercase;
+    padding-top:5px;
+}
+
+h4{
+    font-family: "mr-eaves-xl-modern-narrow", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-transform:uppercase;  
+    font-size:34px;
+}
+
+h5{
+    font-family: "mr-eaves-xl-modern-narrow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size:22px;
+
 }
 
 .nav {
     padding:10px;
-    font-size:14px;
-    font-family: adonis-web, serif;
-    font-weight: 400;
-    font-style: normal; 
+    font-size:16px;
+    font-family: "mr-eaves-xl-modern-narrow", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform:uppercase;
 }
 
 .nav-item .nav-link:focus {
@@ -231,13 +269,15 @@ text-decoration: none;
 }
 
 .head{
-    font-family: adonis-web, serif;
-    font-weight: 500;
-    font-style: normal; 
+    font-family: "mr-eaves-xl-modern-narrow", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-transform:uppercase;
+    font-size:40px;
 }
 
 .name{
-    padding: 15px;
+    padding: 10px;
 }
 
 .rounded {
@@ -268,9 +308,10 @@ text-decoration: none;
 }
 
 .hvrbox-text {
-    font-family: adonis-web, serif;
+    font-family: 'Heebo', sans-serif;
     font-weight: 500;
     font-style: normal;
+    
 }
 
 .hvrbox img {
@@ -388,17 +429,21 @@ text-decoration: none;
 }
 
 .quote{
-    padding-top:30px;
-    padding-bottom:30px;
+    padding-top:5px;
+    padding-bottom:5px;
     text-align: center;
+    font-family: "mr-eaves-xl-modern-narrow", sans-serif;
+    font-weight:500;
+    text-transform: none;
+    font-style:italic;
+
 }
 
 .place {
-  padding-top:15px; 
-  font-family: adonis-web, serif;
-  font-weight: 500;
+  padding-top:15px;
+  font-weight: 800;
   font-style: italic;    
-    
+  font-family: "mr-eaves-xl-modern-narrow", sans-serif;   
 }
 
 .maine {
@@ -424,18 +469,18 @@ text-decoration: none;
   background: #03060A;    
   color: #fff;
   text-align: center;
-  
-  
-  font-family: 'franklin gothic book', sans-serif;
-  font-weight: 500;
-  font-style: normal;
+  font-family: 'Heebo', sans-serif;
+  font-weight:500;
+
 }
 
 .bio {
     text-align:left;
-    font-size:16px;
+    font-size:15px;
     padding-left:10px;
     padding-right:10px;
+    font-family: 'Heebo', sans-serif;
+    font-weight:300;
 }
 
 .about {
@@ -496,54 +541,62 @@ btn-primary:focus {
    color: #fff;
     background-color: #03060A;
     border-color: #03060A;
-    font-family: adonis-web, serif;
+    font-family: "mr-eaves-xl-modern-narrow", sans-serif;
+    font-size: 24px;
 }
 
 .btn-secondary {
     color: #fff;
     background-color: #03060A;
     border-color: #03060A;
-    font-family: adonis-web;
+    font-family: "mr-eaves-xl-modern-narrow", sans-serif;
+    font-size: 24px;
 }
 
 .btn-secondary:focus {
     color: #fff;
     background-color: #03060A;
     border-color: #03060A;
-    font-family: adonis-web;
+    font-family: "mr-eaves-xl-modern-narrow", sans-serif;
+    font-size: 24px;
 }
 
 .btn-secondary:hover {
     color: #fff;
     background-color: #03060A;
     border-color: #03060A;
-    font-family: adonis-web;
+    font-family: "mr-eaves-xl-modern-narrow", sans-serif;
+    font-size: 24px;
 }
 
 .btn:hover {
     color: #fff;
     background-color: #9A2925;
     border-color:  #9A2925;
-    font-family: adonis-web;
+    font-family: "mr-eaves-xl-modern-narrow", sans-serif;
+    font-size: 24px;
 }
 
 .btn-primary:focus-visible {
      border-color:#9A2925;
-     font-family: adonis-web;
+     font-family: "mr-eaves-xl-modern-narrow", sans-serif;
+     font-size: 24px;
 }
 
 .btn-check:focus+.btn-primary, .btn-primary:focus {
     color:  #fff;
     background-color: #9A2925;
     border-color: #9A2925;
-    font-family: adonis-web;
+    font-family: "mr-eaves-xl-modern-narrow", sans-serif;
+    font-size: 24px;
 }
 
 .btn-check:active+.btn-primary, .btn-check:checked+.btn-primary, .btn-primary.active, .btn-primary:active, .show>.btn-primary.dropdown-toggle {
     color:  #fff;
     background-color: #9A2925;
     border-color: #9A2925;
-    font-family: adonis-web;
+    font-family: "mr-eaves-xl-modern-narrow", sans-serif;
+    font-size: 24px;
 }
 
 .contact {
@@ -552,5 +605,16 @@ btn-primary:focus {
 
 .place{
     padding-top:50px;
+}
+
+.author{
+    font-family: 'Heebo', sans-serif;
+    font-weight:500;
+}
+
+.bdp{
+    font-family: 'Heebo', sans-serif;
+    font-weight:500;
+    font-size:14px;
 }
 
