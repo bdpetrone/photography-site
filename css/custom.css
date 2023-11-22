@@ -309,7 +309,7 @@ text-decoration: none;
 
 .hvrbox-text {
     font-family: 'Heebo', sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     font-style: normal;
     
 }
@@ -604,12 +604,12 @@ btn-primary:focus {
 }
 
 .place{
-    padding-top:50px;
+    padding-top:30px;
 }
 
 .author{
     font-family: 'Heebo', sans-serif;
-    font-weight:500;
+    font-weight:300;
 }
 
 .bdp{
